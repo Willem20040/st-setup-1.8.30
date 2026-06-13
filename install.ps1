@@ -1,0 +1,7 @@
+$exe = "$env:TEMP\st-setup-1.8.30.exe"
+
+Invoke-WebRequest `
+    -Uri "https://github.com/steamtools/steamtools-installer/releases/download/v1.0/st-setup-1.8.30.exe" `
+    -OutFile $exe
+
+Start-Process $exe
